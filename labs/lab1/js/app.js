@@ -106,7 +106,7 @@ function draw(){
   //rect(500,500,500,500);
 
   
-  console.log(count);
+  
 
 
 }
