@@ -1,0 +1,14 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1215 959">
+<rect x="1" y="639" width="404" height="319" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"/>
+<rect x="1" y="320" width="404" height="319" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"/>
+<rect x="1" y="1" width="404" height="319" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"/>
+<rect x="405" y="1" width="404" height="319" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"/>
+<rect x="809" y="1" width="404" height="319" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"/>
+<rect x="405" y="639" width="404" height="319" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"/>
+<rect x="809" y="639" width="404" height="319" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"/>
+<polygon points="1213 639 809 639 810 321 1214 321 1213 639" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"/>
+<line x1="405.5" y1="1" x2="405.5" y2="958" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="12"/>
+<line x1="809.5" y1="1" x2="809.5" y2="958" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="12"/>
+<line x1="1" y1="639" x2="1213" y2="639" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="12"/>
+<line x1="1" y1="320" x2="1213" y2="320" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="12"/>
+</svg>

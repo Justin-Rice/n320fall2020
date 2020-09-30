@@ -1,17 +1,24 @@
 
 
-// let space =  document.getElementById("space");
-// space.addEventListener("click",onMouseOver);
+// let path20 =  document.getElementById("path45");
+// path20.addEventListener("click",onClick);
 
-// function onMouseOver(event){
-//     event.target.style.fill = "#000000"
+// function onClick(event){
+//     event.target.style.fill = "black"
 //     console.log("pain")
 
 // }
 
-let space = document.getElementById("space")
 
-space.addEventListener("click", onTrailClick);
-function onTrailClick(event){
-    event.target.style.fill= "#00FF00"
+let space = document.getElementsByClassName("SVGSux")
+let i = space.length;
+while (i -- )
+space[i].addEventListener('mouseover',onMouseOver);
+
+//space.addEventListener("click", onTrailClick);
+function onMouseOver(event){
+    event.target.style.fill= "gray"
+    
 }
+
+
