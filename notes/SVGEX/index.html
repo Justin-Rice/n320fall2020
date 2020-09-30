@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .gamepiece{
+            fill: #31259c;
+            stroke: #c9249b;
+            stroke-width: 3;
+
+        }
+    </style>
+</head>
+<body>
+    <svg>
+        <circle cx ="100" cy= "50" r = "30" class= "gamepiece"/>
+        <rect x="0" y="0" width ="40" height="20" class = "gamepiece" id = "mainRect"/>
+        <line x1 ="0" y1="0" x2="300" y2="300" class = "gamepiece" />
+    </svg>
+    <!-- brings in svg that could be uused as background <img src= "img/"/> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
+    <script src= "js/app.js"></script>
+</body>
+</html>
