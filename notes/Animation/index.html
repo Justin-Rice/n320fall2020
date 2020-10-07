@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: #453d54 ;
+        }
+        .status button{
+            background-color: #aa80ff;
+            border-radius: 10px;
+            color: #fff;
+
+        }
+        .status textarea{
+            border: 1px solid #999;
+            border-radius: 10px;
+            width: 23em;
+            height: 1em;
+        }
+    
+        .selected {
+            animation-name: selectedAnim;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+        }
+        .deselected{
+            animation-name: selectedAnim;
+            animation-duration: 1s;
+            animation-direction: reverse;
+            animation-fill-mode: forwards;
+        }
+        @keyframes selectedAnim {
+            from {height: 1em; background-color: white;}
+            to{height: 3em; background-color: #ffcfe4;}
+            
+        }
+
+    </style>
+   
+</head>
+<body>
+    <div class = "status">
+        <textarea id = "txtStatInput" 
+        onfocus="textFocus()"
+        onblur="textLeave()">
+        </textarea>
+        <!-- functions bold outlines of functions being focused by mouse -->
+        <button>Submit</button>
+
+    </div>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
+    <script src= "js/app.js"></script>
+</body>
+</html>
