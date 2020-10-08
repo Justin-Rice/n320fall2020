@@ -1,4 +1,4 @@
 
 
     let thing = document.getElementById("all");
-    TweenLite.from(thing, {duration: 3, alpha:0 })
+    TweenLite.from(thing, {duration: 1, alpha:0, x: 200 })
