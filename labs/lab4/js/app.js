@@ -10,7 +10,7 @@
 // }
 
 
-
+var count = 0;
 
 class Player {
 
@@ -84,18 +84,17 @@ class Board {
     }
     // fills the space thats cliked on with the right symbol
     fillSpace(){
-        let turn = 0;
         let space = document.getElementsByClassName("SVGSux");
         for(let x = 0; x < space.length; x++){
             space[x].addEventListener('click',function(event){
               
                 if(event.target.getAttribute("picked") == 0){
-                if(turn % 2 == 0){
+                if(count % 2 == 0){
                     
                 event.target.style.fill= "orange";
                     //changes the attribute number of picked so it cant be clicked again
                 event.target.setAttribute("picked", "1")
-                turn ++;
+                count ++;
                 }else{
 
                     event.target.style.fill= "green";
@@ -103,7 +102,7 @@ class Board {
                     event.target.setAttribute("picked", "2")
 
 
-                    turn ++;
+                    count ++;
                 }
 
             }
@@ -115,7 +114,7 @@ class Board {
 
     reset(){
        // console.log(player.pWon);
-
+        count = 0;
         pp1.pWon = 0;
         pp2.pWon = 0;
 
