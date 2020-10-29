@@ -3,24 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lab 4</title>
+	<title>Lab 4</title>
+	<style>
+		svg{
+			display: flex;
+			height: 50%;
+			width: 80%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	</style>
 </head>
+
 <body>
-    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1215 959">
-		<rect class = "SVGSux" x="1" y="639" width="404" height="319" fill="white" stroke="#fff" stroke-miterlimit="10" stroke-width="2" />
-		<rect class = "SVGSux" x="1" y="320" width="404" height="319" fill="white" stroke="#fff" stroke-miterlimit="10" stroke-width="2"/>
-		<rect class = "SVGSux" x="1" y="1" width="404" height="319" fill="white" stroke="#fff" stroke-miterlimit="10" stroke-width="2"/>
-		<rect class = "SVGSux" x="405" y="1" width="404" height="319" fill="white" stroke="#fff" stroke-miterlimit="10" stroke-width="2"/>
-		<rect class = "SVGSux" x="809" y="1" width="404" height="319" fill="white" stroke="#fff" stroke-miterlimit="10" stroke-width="2"/>
-		<rect class = "SVGSux" x="405" y="639" width="404" height="319" fill="white" stroke="#fff" stroke-miterlimit="10" stroke-width="2"/>
-		<rect class = "SVGSux" x="405" y="320" width="404" height="319" fill="white" stroke="#fff" stroke-miterlimit="10" stroke-width="2"/>
-		<rect class = "SVGSux" x="809" y="639" width="404" height="319" fill="white"stroke="#fff" stroke-miterlimit="10" stroke-width="2"/>
-		<polygon class = "SVGSux"  points="1213 639 809 639 810 321 1214 321 1213 639" fill="white" stroke="#fff" stroke-miterlimit="10" stroke-width="2"/>
+	<h1 id="p1">Player 1: <span id = "p1score"> 0</span></h1>
+	<h1 id="p2">Player 2:<span id = "p2score"> 0</span> </h1>
+	<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1215 959">
+		<rect id ='1' class = "SVGSux" x="1" y="1" width="404" height="319" fill="white" stroke="#fff" stroke-miterlimit="10" stroke-width="2" picked = "0"/>
+		<rect id ='2' class = "SVGSux" x="405" y="1" width="404" height="319" fill="white" stroke="#fff" stroke-miterlimit="10" stroke-width="2" picked = "0"/>
+		<rect id ='3' class = "SVGSux" x="809" y="1" width="404" height="319" fill="white" stroke="#fff" stroke-miterlimit="10" stroke-width="2" picked = "0"/>
+		<rect id ='4' class = "SVGSux" x="1" y="320" width="404" height="319" fill="white" stroke="#fff" stroke-miterlimit="10" stroke-width="2"picked = "0" />
+		<rect id ='5' class = "SVGSux" x="405" y="320" width="404" height="319" fill="white" stroke="#fff" stroke-miterlimit="10" stroke-width="2" picked = "0"/>
+		<rect id ='6'class = "SVGSux"  x='809' y="320" width= "404" height="319"fill="white" stroke="#fff" stroke-miterlimit="10" stroke-width="2" picked = "0"/>
+		<rect id ='7' class = "SVGSux" x="1" y="639" width="404" height="319" fill="white" stroke="#fff" stroke-miterlimit="10" stroke-width="2" picked = "0" />
+		<rect id ='8' class = "SVGSux" x="405" y="639" width="404" height="319" fill="white" stroke="#fff" stroke-miterlimit="10" stroke-width="2" picked = "0"/>
+		<rect id ='9' class = "SVGSux" x="809" y="639" width="404" height="319" fill="white"stroke="#fff" stroke-miterlimit="10" stroke-width="2" picked = "0"/>
 		<line x1="405.5" y1="1" x2="405.5" y2="958" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="12"/>
 		<line x1="809.5" y1="1" x2="809.5" y2="958" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="12"/>
 		<line x1="1" y1="639" x2="1213" y2="639" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="12"/>
 		<line x1="1" y1="320" x2="1213" y2="320" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="12"/>
 		</svg>
+
+		<button onclick="clickButton()">Reset</button> 
 
     <script src= "js/app.js"></script>
 </body>
