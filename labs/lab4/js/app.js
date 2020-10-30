@@ -1,15 +1,5 @@
 
 
-// let path20 =  document.getElementById("path45");
-// path20.addEventListener("click",onClick);
-
-// function onClick(event){
-//     event.target.style.fill = "black"
-//     console.log("pain")
-
-// }
-
-
 var count = 0;
 
 class Player {
@@ -30,14 +20,14 @@ class Player {
         if (space[0].getAttribute("picked") == 1 && space[1].getAttribute("picked") == 1 && space[2].getAttribute("picked") == 1 ||
             space[3].getAttribute("picked") == 1 && space[4].getAttribute("picked") == 1 && space[5].getAttribute("picked") == 1 ||
             space[6].getAttribute("picked") == 1 && space[7].getAttribute("picked") == 1 && space[8].getAttribute("picked") == 1 ||
-            /*checks for horizontal matches for orange ( X ) */
+            /*checks for horizontal matches for ( X ) */
             space[0].getAttribute("picked") == 1 && space[3].getAttribute("picked") == 1 && space[6].getAttribute("picked") == 1 ||
             space[1].getAttribute("picked") == 1 && space[4].getAttribute("picked") == 1 && space[7].getAttribute("picked") == 1 ||
             space[2].getAttribute("picked") == 1 && space[5].getAttribute("picked") == 1 && space[8].getAttribute("picked") == 1 ||
-            /*checks for vertical matches for orange ( X ) */
+            /*checks for vertical matches for ( X ) */
             space[0].getAttribute("picked") == 1 && space[4].getAttribute("picked") == 1 && space[8].getAttribute("picked") == 1 ||
             space[2].getAttribute("picked") == 1 && space[4].getAttribute("picked") == 1 && space[6].getAttribute("picked") == 1
-            /*checks for diagonal matches for orange ( X ) */
+            /*checks for diagonal matches for ( X ) */
         ) {
 
             console.log("nice");
@@ -49,14 +39,14 @@ class Player {
         if (space[0].getAttribute("picked") == 2 && space[1].getAttribute("picked") == 2 && space[2].getAttribute("picked") == 2 ||
             space[3].getAttribute("picked") == 2 && space[4].getAttribute("picked") == 2 && space[5].getAttribute("picked") == 2 ||
             space[6].getAttribute("picked") == 2 && space[7].getAttribute("picked") == 2 && space[8].getAttribute("picked") == 2 ||
-            /*checks for horizontal matches for green ( 0 ) */
+            /*checks for horizontal matches for ( 0 ) */
             space[0].getAttribute("picked") == 2 && space[3].getAttribute("picked") == 2 && space[6].getAttribute("picked") == 2 ||
             space[1].getAttribute("picked") == 2 && space[4].getAttribute("picked") == 2 && space[7].getAttribute("picked") == 2 ||
             space[2].getAttribute("picked") == 2 && space[5].getAttribute("picked") == 2 && space[8].getAttribute("picked") == 2 ||
-            /*checks for vertical matches for green ( 0 ) */
+            /*checks for vertical matches for ( 0 ) */
             space[0].getAttribute("picked") == 2 && space[4].getAttribute("picked") == 2 && space[8].getAttribute("picked") == 2 ||
             space[2].getAttribute("picked") == 2 && space[4].getAttribute("picked") == 2 && space[6].getAttribute("picked") == 2
-            /*checks for diagonal matches for green ( O ) */
+            /*checks for diagonal matches for ( O ) */
         ) {
 
             console.log("nice2");
@@ -91,13 +81,13 @@ class Board {
                 if(event.target.getAttribute("picked") == 0){
                 if(count % 2 == 0){
                     
-                event.target.style.fill= "orange";
+                event.target.style.fill= "#c3073f";
                     //changes the attribute number of picked so it cant be clicked again
                 event.target.setAttribute("picked", "1")
                 count ++;
                 }else{
 
-                    event.target.style.fill= "green";
+                    event.target.style.fill= "#eda232";
                     //changes the attribute number of picked so it cant be clicked again
                     event.target.setAttribute("picked", "2")
 
@@ -127,7 +117,7 @@ class Board {
             
               
                     
-                  newThing[x].style.fill= "white";
+                  newThing[x].style.fill= "#434350";
                   newThing[x].setAttribute("picked", "0");
 
                   
@@ -154,7 +144,6 @@ class Symbols {
         
 //gives point to the player that won
 addPoint(){
-    console.log(board.turn)
     if(this.p1.checkWin() == 1){
     this.p1.score ++ ;
 
@@ -165,8 +154,7 @@ addPoint(){
         console.log("stank")
 
     }
-    console.log(this.p1.checkWin())
-    console.log(this.p2.checkWin())
+   
 
     
 }
@@ -201,3 +189,8 @@ function clickButton(){
     player.pWon = 0;
     
     }
+
+    let thing = document.getElementById("Layer_1");
+    TweenLite.from(thing, {duration: 1, alpha:0, x: 200 })
+
+   let column = document.getElementsByClassName("column");

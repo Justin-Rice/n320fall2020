@@ -6,36 +6,124 @@
 	<title>Lab 4</title>
 	<style>
 		svg{
-			display: flex;
-			height: 50%;
-			width: 80%;
+			width: 50%;
 			margin-left: auto;
 			margin-right: auto;
+			background-color: #1a1a1D;
+			padding-top: 20px;
+
+		}
+		.SVGSux{
+			display: flex;
+			border-radius: 20px;
+			/* padding: 20px; */
+			
+		}
+		body{
+			background-color: #1a1a1D;
+			justify-content: center;
+
+		}
+		button{
+			
+			  background-color: #950740;
+			  height: 5em;
+			  width: 20em;
+			  font-family: "Lucida Console", Monaco, monospace;
+			  font-size: 103%;
+			  border-left-style: solid;
+			  border-bottom: none;
+			  border-right: none;
+			  border-top: none;
+			  border-left-width: 10px;
+			  border-left-color: #6f2232;
+			  border-radius: 2px;
+			  outline: none;
+			  color: whitesmoke;
+			  margin-left: 80px;
+			  margin-top: 30px;
+			  transition: all 0.5s ease 0s;
+
+			  
+
+		}
+		button:hover {
+  			background: #434350;
+ 			 border-color: #950740;
+  			transition: all 0.5s ease 0s;
+ 			 
+}
+		#buttonCont{
+			
+			text-align: center;
+
+		}
+		#header{
+			 color:whitesmoke;
+			background-color: #950740;
+			width: 20em;
+			height: 8em;
+			border-radius:3px ;
+			font-family: "Lucida Console", Monaco, monospace;
+			text-align: center;
+			font-size: 100%;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			margin-top: 150px;
+			margin-bottom: 5px;
+			margin-left: 80px;
+			border-left-style: solid ;
+			border-left-width: 10px ;
+			border-left-color: #6f2232;
+			
+
+
+		}
+
+		#column{
+			display: flex;
 		}
 	</style>
 </head>
 
+
+
 <body>
-	<h1 id="p1">Player 1: <span id = "p1score"> 0</span></h1>
-	<h1 id="p2">Player 2:<span id = "p2score"> 0</span> </h1>
+	<li>
+		<ol> stank </ol>
+	</li>
+	<div id = "column">
+		<header>
+			<div id ="header">
+			<h2 id="p1">Player 1: <span id = "p1score"> 0</span></h2>
+			<h2 id="p2">Player 2: <span id = "p2score"> 0</span> </h2>
+			</div>
+			<div id ="buttonCont">
+			<button onclick="clickButton()"><h2>Reset</h2></button> 
+				</div>
+		</header>
+		
 	<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1215 959">
-		<rect id ='1' class = "SVGSux" x="1" y="1" width="404" height="319" fill="white" stroke="#fff" stroke-miterlimit="10" stroke-width="2" picked = "0"/>
-		<rect id ='2' class = "SVGSux" x="405" y="1" width="404" height="319" fill="white" stroke="#fff" stroke-miterlimit="10" stroke-width="2" picked = "0"/>
-		<rect id ='3' class = "SVGSux" x="809" y="1" width="404" height="319" fill="white" stroke="#fff" stroke-miterlimit="10" stroke-width="2" picked = "0"/>
-		<rect id ='4' class = "SVGSux" x="1" y="320" width="404" height="319" fill="white" stroke="#fff" stroke-miterlimit="10" stroke-width="2"picked = "0" />
-		<rect id ='5' class = "SVGSux" x="405" y="320" width="404" height="319" fill="white" stroke="#fff" stroke-miterlimit="10" stroke-width="2" picked = "0"/>
-		<rect id ='6'class = "SVGSux"  x='809' y="320" width= "404" height="319"fill="white" stroke="#fff" stroke-miterlimit="10" stroke-width="2" picked = "0"/>
-		<rect id ='7' class = "SVGSux" x="1" y="639" width="404" height="319" fill="white" stroke="#fff" stroke-miterlimit="10" stroke-width="2" picked = "0" />
-		<rect id ='8' class = "SVGSux" x="405" y="639" width="404" height="319" fill="white" stroke="#fff" stroke-miterlimit="10" stroke-width="2" picked = "0"/>
-		<rect id ='9' class = "SVGSux" x="809" y="639" width="404" height="319" fill="white"stroke="#fff" stroke-miterlimit="10" stroke-width="2" picked = "0"/>
+		<rect id ='1' class = "SVGSux" x="1" y="1" width="404" height="319" fill="#434350"   picked = "0"/>
+		<rect id ='2' class = "SVGSux" x="405" y="1" width="404" height="319" fill="#434350" picked = "0"/>
+		<rect id ='3' class = "SVGSux" x="809" y="1" width="404" height="319" fill="#434350" picked = "0"/>
+		<rect id ='4' class = "SVGSux" x="1" y="320" width="404" height="319" fill="#434350" picked = "0" />
+		<rect id ='5' class = "SVGSux" x="405" y="320" width="404" height="319" fill="#434350"  picked = "0"/>
+		<rect id ='6'class = "SVGSux"  x='809' y="320" width= "404" height="319"fill="#434350" picked = "0"/>
+		<rect id ='7' class = "SVGSux" x="1" y="639" width="404" height="319" fill="#434350"   picked = "0" />
+		<rect id ='8' class = "SVGSux" x="405" y="639" width="404" height="319" fill="#434350" picked = "0"/>
+		<rect id ='9' class = "SVGSux" x="809" y="639" width="404" height="319" fill="#434350" picked = "0"/>
 		<line x1="405.5" y1="1" x2="405.5" y2="958" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="12"/>
 		<line x1="809.5" y1="1" x2="809.5" y2="958" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="12"/>
 		<line x1="1" y1="639" x2="1213" y2="639" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="12"/>
 		<line x1="1" y1="320" x2="1213" y2="320" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="12"/>
 		</svg>
+	
+	</div>	
 
-		<button onclick="clickButton()">Reset</button> 
-
-    <script src= "js/app.js"></script>
+		
+		<script src = "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+	<script src= "js/app.js"></script>
+	
 </body>
 </html>

@@ -28,10 +28,8 @@ let app = new Vue({
         show: function(){
             if(this.books[1].display == false){
                 this.books[1].display = true;
-                console.log("poopy");
                 }else if(this.books[1].display == true){
                 this.books[1].display = false;
-                console.log("poopy");
 
 
             }
