@@ -192,5 +192,9 @@ function clickButton(){
 
     let thing = document.getElementById("Layer_1");
     TweenLite.from(thing, {duration: 1, alpha:0, x: 200 })
+    
+    let thing2 = document.getElementById("top");
+    TweenLite.from(thing2, {duration: 1, alpha:0, x: -200 })
 
-   let column = document.getElementsByClassName("column");
+
+

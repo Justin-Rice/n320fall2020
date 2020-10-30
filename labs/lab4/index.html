@@ -83,24 +83,27 @@
 		#column{
 			display: flex;
 		}
+		#score{
+			color: #1a1a1D;
+		}
 	</style>
 </head>
 
 
 
 <body>
-	<li>
-		<ol> stank </ol>
-	</li>
+	
 	<div id = "column">
 		<header>
+			<div id = top>
 			<div id ="header">
-			<h2 id="p1">Player 1: <span id = "p1score"> 0</span></h2>
-			<h2 id="p2">Player 2: <span id = "p2score"> 0</span> </h2>
+			<h2 id="p1"><span id = 'score'>Player 1: </span><span id = "p1score"> 0</span></h2>
+			<h2 id="p2"><span id = 'score'>Player 2: </span><span id = "p2score"> 0</span> </h2>
 			</div>
 			<div id ="buttonCont">
-			<button onclick="clickButton()"><h2>Reset</h2></button> 
+			<button onclick="clickButton()"><h2>Reset Game</h2></button> 
 				</div>
+		</div>
 		</header>
 		
 	<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1215 959">
