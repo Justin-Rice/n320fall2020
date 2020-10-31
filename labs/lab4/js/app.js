@@ -4,10 +4,9 @@ var count = 0;
 
 class Player {
 
-    constructor(name, score, symbol){
+    constructor(name, score){
         this.name = name;
         this.score =score;
-        this.symbol = symbol;
          this.pWon = 0;
 
     }
