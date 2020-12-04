@@ -1,5 +1,3 @@
-
-
 var count = 0;
 
 class Player {
@@ -29,7 +27,6 @@ class Player {
             /*checks for diagonal matches for ( X ) */
         ) {
 
-            console.log("nice");
             this.pWon = 1;
             return 1;
 
@@ -48,7 +45,6 @@ class Player {
             /*checks for diagonal matches for ( O ) */
         ) {
 
-            console.log("nice2");
             this.pWon = 1;
             return 2;
 
@@ -150,7 +146,7 @@ addPoint(){
     }else if(this.p2.checkWin() == 2){
         this.p2.score ++;
         document.getElementById("p2score").innerHTML= this.p2.score; 
-        console.log("stank")
+     
 
     }
    
